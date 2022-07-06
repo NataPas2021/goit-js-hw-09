@@ -5,7 +5,7 @@ const refs = {
 }
 
 const INTERVAL_DELAY = 1000;
-let backgroundBodyColor = undefined; 
+let backgroundBodyColorChange = undefined; 
 
 refs.startBtn.addEventListener('click', onClickColorChange);
 refs.stopBtn.addEventListener('click', onClickStopChangingColor);
