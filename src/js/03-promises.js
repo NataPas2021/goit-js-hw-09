@@ -25,7 +25,7 @@ function onFormSubmit (e) {
   e.preventDefault();
   const { delay, step, amount } = event.target.elements;
   let delayStep = Number(delay.value);
-  for(i = 1; i <= amount.value; i+=1) {
+  for(let i = 1; i <= amount.value; i+=1) {
      createPromise(i, delayStep).then(({ position, delay }) => {
       Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
     })
